@@ -1,0 +1,4 @@
+com\mycompany\dvdstore\dvdstoreweb\controller\AboutUsController.class
+com\mycompany\dvdstore\DvdstoreWebApplication.class
+com\mycompany\dvdstore\dvdstoreweb\controller\HomeController.class
+com\mycompany\dvdstore\dvdstoreweb\controller\MovieController.class
