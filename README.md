@@ -1,5 +1,7 @@
 # dvdstore-web
 
+## exo-24: ajouter un film
+
 ## exo-23: afficher le detail d'un film
 - mise en place de MovieController.displayMovieCard
 
