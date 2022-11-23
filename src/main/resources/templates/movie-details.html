@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie-details</title>
+</head>
+<body>
+    <h1>Movie Details</h1>
+    <div class="movie-detail">
+        <div class="id">Id: <span th:text="${movie.id}"></span></div>
+        <div class="titre">Titre: <span th:text="${movie.title}"></span></div>
+        <div class="genre">Genre: <span th:text="${movie.genre}"></span></div>
+        <div class="description">Description: <span th:text="${movie.description}"></span></div>
+    </div>
+</body>
+</html>
