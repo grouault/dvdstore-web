@@ -1,5 +1,6 @@
 package com.mycompany.dvdstore.dvdstoreweb.controller;
 
+import com.mycompany.dvdstore.dvdstoreweb.bean.MovieBean;
 import com.mycompany.dvdstore.entity.Movie;
 import com.mycompany.dvdstore.service.MovieService;
 import java.util.List;
@@ -25,9 +26,8 @@ public class HomeController {
     }
 
     @GetMapping("/add-movie-form")
-    public @ModelAttribute("movie") Movie displayMovieForm(){
-        Movie movie = new Movie();
-        return movie;
+    public String displayMovieForm(@ModelAttribute("movie") MovieBean movie){
+        return "movie/add-movie-form";
     }
 
 }
