@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
 </head>
 <body>
 
@@ -12,21 +13,19 @@
         <a href="add-movie-form">Ajouter un livre</a>
     </p>
     <div>Liste des livres</div>
-    <table>
-        <thead>
-            <tr>
-                <td>Titre</td>
-                <td>Genre</td>
-            </tr>
-        </thead>
-        <tbody>
-        <tr th:each="movie:${movies}">
-            <td><a th:href="@{/movie/{id}(id=${movie.id})}" th:text="${movie.title}"/></td>
-            <td th:text="${movie.genre}"></td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+    <section class="container">
+        <div class="left-half">
+            <article id="movie-list">
 
+            </article>
+        </div>
+        <div class="right-half">
+            <article id="movie-detail">
+
+            </article>
+        </div>
+    </section>
+</div>
+<script th:src="@{/js/script.js}"></script>
 </body>
 </html>
